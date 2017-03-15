@@ -1,0 +1,8 @@
+/* BEGIN Bold Italic */
+@font-face {
+	font-family: "BloggerSans";
+	@include fontdef($FontPath, $FontName, $FontVersion, "BoldItalic");
+	font-weight: 600;
+	font-style: italic;
+}
+/* END Bold Italic */

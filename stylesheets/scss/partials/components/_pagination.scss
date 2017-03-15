@@ -1,0 +1,20 @@
+/* ------------------ Pagination ------------- */
+
+.pagination {
+	font-weight: 600;
+	
+	// Customize styles for pagination items
+	a {
+		@include pagination-item-current;
+		
+		border-bottom: 4px solid $color-neutral;
+		cursor: pointer;
+	}
+
+	// Customize styles for current pagination item
+	.current {
+		@include pagination-item-current ($color-current: $color-main);
+		
+		border-bottom: 4px solid $color-main;
+	}
+}

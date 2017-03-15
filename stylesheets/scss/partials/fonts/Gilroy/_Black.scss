@@ -1,0 +1,8 @@
+/* BEGIN Black */
+@font-face {
+	font-family: "Gilroy";
+	@include fontdef($GilroyFontPath, $GilroyFontName, "Black");
+	font-weight: 900;
+	font-style: normal;
+}
+/* END Black */

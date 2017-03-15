@@ -1,0 +1,14 @@
+{
+  "name": "Loy",
+  "description": "",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "https://github.com/KateSwann/Loy",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

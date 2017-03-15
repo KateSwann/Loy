@@ -1,0 +1,42 @@
+/* ------------------ Menu ------------- */
+$site-nav-menu-item-margin: 0 1.1rem;
+$site-nav-menu-item-padding: 1.6rem 0;
+
+$sub-footer-menu-margin: 0 0 1.6rem;
+
+.site-nav-menu {
+    @include menu-base;
+
+    font-weight: 600;
+    font-size: rem-calc(18);
+    
+    // Reset line height to make the height of the overall item easier to calculate
+    > li > a {
+      margin: $site-nav-menu-item-margin;
+      padding: $site-nav-menu-item-padding;
+      border-bottom: 4px solid transparent;
+    }
+
+    // Active state
+    .active > a {
+      border-bottom-color: $color-main;
+      color: $color-main;
+    }
+
+}
+
+.sub-footer-menu {
+  @include menu-simple;
+
+  margin: $sub-footer-menu-margin;
+  font-size: rem-calc(18);
+  font-weight: 600;
+
+  text-align: justify;
+  text-justify: newspaper; 
+  text-align-last: justify;
+
+  li {margin-right: 0;}
+
+  a {color: $medium-gray;}
+}

@@ -1,0 +1,8 @@
+/* BEGIN Bold */
+@font-face {
+	font-family: "BloggerSans";
+	@include fontdef($FontPath, $FontName, $FontVersion, "Bold");
+	font-weight: 500;
+	font-style: normal;
+}
+/* END Bold */

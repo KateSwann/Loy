@@ -1,0 +1,15 @@
+@mixin fontdef($GilroyFontPath, $GilroyFontName, $FontType:"Black") {
+  src:  url('#{$GilroyFontPath}/#{$FontType}/#{$GilroyFontName}-#{$FontType}.eot');
+  src:  url('#{$GilroyFontPath}/#{$FontType}/#{$GilroyFontName}-#{$FontType}.eot') format('embedded-opentype'),
+        url('#{$GilroyFontPath}/#{$FontType}/#{$GilroyFontName}-#{$FontType}.woff2') format('woff2'),
+        url('#{$GilroyFontPath}/#{$FontType}/#{$GilroyFontName}-#{$FontType}.woff') format('woff'),
+        url('#{$GilroyFontPath}/#{$FontType}/#{$GilroyFontName}-#{$FontType}.ttf') format('truetype'),
+        url('#{$GilroyFontPath}/#{$FontType}/#{$GilroyFontName}-#{$FontType}.svg') format('svg');
+}
+
+@mixin fontdef-woff($GilroyFontPath, $GilroyFontName, $FontType:"Black") {
+	src:	url('#{$GilroyFontPath}/#{$FontType}/#{$GilroyFontName}-#{$FontType}.woff2') format('woff2'),
+			url('#{$GilroyFontPath}/#{$FontType}/#{$GilroyFontName}-#{$FontType}.woff') format('woff'),
+			url('#{$GilroyFontPath}/#{$FontType}/#{$GilroyFontName}-#{$FontType}.ttf') format('truetype');
+}
+

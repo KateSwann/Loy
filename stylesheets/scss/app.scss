@@ -1,0 +1,97 @@
+/**
+ * Main SCSS for Foundation 6 only
+ * built with foundation-sites
+ */
+
+// @import "normalize";
+@import "settings/settings";
+@import "partials/settings-override";
+
+@import "foundation";
+@include foundation-global-styles;
+@include foundation-grid;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+@include foundation-accordion;
+@include foundation-accordion-menu;
+@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-button-group;
+@include foundation-callout;
+@include foundation-close-button;
+@include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-label;
+@include foundation-media-object;
+@include foundation-menu;
+@include foundation-off-canvas;
+@include foundation-orbit;
+@include foundation-pagination;
+@include foundation-progress-bar;
+@include foundation-slider;
+@include foundation-sticky;
+@include foundation-reveal;
+@include foundation-switch;
+@include foundation-table;
+@include foundation-tabs;
+@include foundation-thumbnail;
+@include foundation-title-bar;
+@include foundation-tooltip;
+@include foundation-top-bar;
+
+
+@import "partials/custom";
+
+
+// --------------- base ---------------------
+@import
+        "partials/base/typography.scss";
+
+
+// --------------- components ---------------
+@import
+        "partials/components/label.scss",
+        "partials/components/menu.scss",
+        "partials/components/pagination.scss",
+        "partials/components/tabs.scss";
+
+
+// --------------- fonts -------------------
+
+// BloggerSans
+@import
+		"partials/fonts/BloggerSans/BloggerSans-variables",
+		"partials/fonts/BloggerSans/BloggerSans-mixins",
+		"partials/fonts/BloggerSans/Light",
+		"partials/fonts/BloggerSans/LightItalic",
+		"partials/fonts/BloggerSans/Regular",
+		"partials/fonts/BloggerSans/Italic",
+		"partials/fonts/BloggerSans/Medium",
+		"partials/fonts/BloggerSans/MediumItalic",
+		"partials/fonts/BloggerSans/Bold",
+		"partials/fonts/BloggerSans/BoldItalic";
+
+// Gilroy
+@import
+		"partials/fonts/Gilroy/gilroy-variables",
+		"partials/fonts/Gilroy/gilroy-mixins",
+		"partials/fonts/Gilroy/Light",
+		"partials/fonts/Gilroy/Black";
+
+
+// --------------- layout ------------------
+@import
+        "partials/layout/footer.scss";
+
+
+
+
+
+
+
+
+

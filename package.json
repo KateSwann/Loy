@@ -1,0 +1,35 @@
+{
+  "name": "loy",
+  "version": "0.1.0",
+  "devDependencies": {
+    "babel-preset-env": "^1.1.8",
+    "babel-preset-es2015": "^6.22.0",
+    "foundation-sites": "^6.3.0",
+    "grunt": "^0.4.5",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-babel": "^6.0.0",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-sass": "^0.8.1",
+    "grunt-contrib-uglify": "^0.7.0",
+    "grunt-contrib-watch": "^0.6.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KateSwann/Loy.git"
+  },
+  "author": "KateSwann",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KateSwann/Loy/issues"
+  },
+  "homepage": "https://github.com/KateSwann/Loy#readme",
+  "dependencies": {
+    "babel-preset-react": "^6.22.0"
+  },
+  "main": "Gruntfile.js",
+  "description": ""
+}

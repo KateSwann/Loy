@@ -1,0 +1,8 @@
+/* BEGIN Light */
+@font-face {
+	font-family: "Gilroy";
+	@include fontdef($GilroyFontPath, $GilroyFontName, "Light");
+	font-weight: 300;
+	font-style: normal;
+}
+/* END Light */

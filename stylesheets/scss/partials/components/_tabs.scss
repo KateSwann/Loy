@@ -1,0 +1,19 @@
+/* ------------------ Tabs ------------- */
+
+.tabs {
+	border: none;
+}
+
+.tabs-title {
+	width: 50%;
+	border-bottom: 2px solid transparent;
+
+	&.is-active {
+		border-color: #D8D8D8;
+	}
+
+	& > a {
+		font-weight: 600;
+		text-align: center;
+	}
+}

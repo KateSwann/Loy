@@ -1,0 +1,15 @@
+@mixin fontdef($FontPath, $FontName, $FontVersion, $FontType:"Regular") {
+  src:  url('#{$FontPath}/#{$FontType}/#{$FontName}-#{$FontType}.eot');
+  src:  url('#{$FontPath}/#{$FontType}/#{$FontName}-#{$FontType}.eot') format('embedded-opentype'),
+        url('#{$FontPath}/#{$FontType}/#{$FontName}-#{$FontType}.woff2') format('woff2'),
+        url('#{$FontPath}/#{$FontType}/#{$FontName}-#{$FontType}.woff') format('woff'),
+        url('#{$FontPath}/#{$FontType}/#{$FontName}-#{$FontType}.ttf') format('truetype'),
+        url('#{$FontPath}/#{$FontType}/#{$FontName}-#{$FontType}.svg') format('svg');
+}
+
+@mixin fontdef-woff($FontPath, $FontName, $FontVersion:"1.0.0", $FontType:"Regular") {
+	src:	url('#{$FontPath}/#{$FontType}/#{$FontName}-#{$FontType}.woff2') format('woff2'),
+			url('#{$FontPath}/#{$FontType}/#{$FontName}-#{$FontType}.woff') format('woff'),
+			url('#{$FontPath}/#{$FontType}/#{$FontName}-#{$FontType}.ttf') format('truetype');
+}
+
