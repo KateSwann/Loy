@@ -52,17 +52,40 @@ $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 
 $foundation-palette: (
-  primary: #2199e8,
-  secondary: #767676,
+  primary: #405BFF,
+  secondary: #848D92,
   success: #3adb76,
   warning: #ffae00,
   alert: #cc4b37,
 );
 
-$color-main: #FF5959; // coral
-$color-accent: #8066CE; // velvet
-$color-info: #FFFB82; // velvet
-$color-neutral: #F2F2F2; // greyish biege
+$loy-button-palette: map-merge($foundation-palette, (
+  primary-lighten: #4657FF, // lighten blue
+  accent: #FF61A1, // bubble gum pink
+  blank: #FFFFFF, // white
+)) !default;
+
+// $loy-palette: (
+//   primary: #405BFF,
+//   primary-lighten: #4657FF,
+//   accent: #FF61A1,     
+//   secondary: #848D92,
+//   secondary-lighten: #748290,
+//   neutral: #F2F2F2,
+//   success: #3adb76,
+//   warning: #ffae00,
+//   alert: #cc4b37,
+// ) !default;
+
+$main-color: #FF61A1; // bubble gum pink
+$accent-color: #405BFF; // lightish blue
+$info-color: #848D92; // bluish grey
+$neutral-color: #F2F2F2; // greyish biege
+
+$primary-lighten-color: #4657FF; // lighten blue
+$accent-color: #FF61A1; // bubble gum pink
+$secondary-lighten-color: #748290; // light grey
+$neutral-color: #F2F2F2; // greyish biege
 
 $light-gray: #e6e6e6;
 $medium-gray: #939393;
@@ -87,6 +110,7 @@ $global-radius: 0;
 $global-text-direction: ltr;
 $global-flexbox: false;
 $print-transparent-backgrounds: true;
+
 
 @include add-foundation-colors;
 
@@ -155,8 +179,8 @@ $code-font-weight: $global-weight-normal;
 $code-background: $light-gray;
 $code-border: 1px solid $medium-gray;
 $code-padding: rem-calc(2 5 1);
-$anchor-color: $color-accent;
-$anchor-color-hover: scale-color($color-accent, $lightness: -14%);
+$anchor-color: $accent-color;
+$anchor-color-hover: scale-color($accent-color, $lightness: -14%);
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
 $hr-width: $global-width;
@@ -244,7 +268,7 @@ $badge-font-size: 0.6rem;
 
 $breadcrumbs-margin: 0 0 $global-margin 0;
 $breadcrumbs-item-font-size: rem-calc(16);
-$breadcrumbs-item-color: $color-accent;
+$breadcrumbs-item-color: $accent-color;
 $breadcrumbs-item-color-current: $medium-gray;
 $breadcrumbs-item-color-disabled: $light-gray;
 $breadcrumbs-item-margin: 0.2rem;
@@ -261,14 +285,14 @@ $button-background: $primary-color;
 $button-background-hover: scale-color($button-background, $lightness: -15%);
 $button-color: $white;
 $button-color-alt: $black;
-$button-radius: $global-radius;
+$button-radius: rem-calc(1000px);
 $button-sizes: (
   tiny: 0.6rem,
   small: 0.75rem,
   default: 0.9rem,
   large: 1.25rem,
 );
-$button-palette: $foundation-palette;
+$button-palette: $loy-button-palette;
 $button-opacity-disabled: 0.25;
 $button-background-hover-lightness: -20%;
 $button-hollow-hover-lightness: -50%;
@@ -478,13 +502,13 @@ $orbit-control-zindex: 10;
 
 $pagination-font-size: rem-calc(18);
 $pagination-margin-bottom: $global-margin;
-$pagination-item-color: $color-main;
+$pagination-item-color: $accent-color;
 $pagination-item-padding: rem-calc(20 30);
 $pagination-item-spacing: rem-calc(-4);
 $pagination-radius: $global-radius;
-$pagination-item-background-hover: $color-neutral;
+$pagination-item-background-hover: $neutral-color;
 $pagination-item-background-current: $white;
-$pagination-item-color-current: $color-accent;
+$pagination-item-color-current: $accent-color;
 $pagination-item-color-disabled: $medium-gray;
 $pagination-ellipsis-color: $black;
 $pagination-mobile-items: true;

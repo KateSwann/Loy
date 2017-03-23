@@ -18,7 +18,7 @@
         connect: {
             server: {
                 options: {
-                    port: 9001,
+                    port: 9000,
                     index: 'index.html',
                     livereload: true
                 }
@@ -154,5 +154,5 @@
 
     grunt.registerTask('buildCss', ['sass', 'autoprefixer']);
     grunt.registerTask('buildJs', ['concat', 'uglify']);
-    grunt.registerTask('default', ['connect', 'buildCss', 'buildJs', 'watch']);
+    grunt.registerTask('default', ['buildCss', 'buildJs', 'watch']);
 };

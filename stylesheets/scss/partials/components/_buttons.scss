@@ -1,0 +1,13 @@
+/* ------------------ Buttons ------------- */
+
+// customize default foundation stiles
+
+.button {
+	font-weight: 500;
+}
+
+.button.hollow {
+	@include button-hollow;
+	
+	border-width: rem-calc(2) !important;
+}

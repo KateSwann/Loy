@@ -7,14 +7,14 @@
 	a {
 		@include pagination-item-current;
 		
-		border-bottom: 4px solid $color-neutral;
+		border-bottom: 4px solid $neutral-color;
 		cursor: pointer;
 	}
 
 	// Customize styles for current pagination item
 	.current {
-		@include pagination-item-current ($color-current: $color-main);
+		@include pagination-item-current ($color-current: $main-color);
 		
-		border-bottom: 4px solid $color-main;
+		border-bottom: 4px solid $main-color;
 	}
 }

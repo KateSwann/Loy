@@ -15,12 +15,12 @@ $label-padding-big: 0.7rem 0.6rem !default;
 	}
 
 	&.sale {
-		background-color: $color-main;
+		background-color: $main-color;
 		color: $white;
 	}
 
 	&.best-deal {
-		background-color: $color-info;
+		background-color: $secondary-color;
 		color: $black;
 	}
 }

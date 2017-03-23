@@ -1,42 +1,43 @@
 /* ------------------ Menu ------------- */
-$site-nav-menu-item-margin: 0 1.1rem;
-$site-nav-menu-item-padding: 1.6rem 0;
 
-$sub-footer-menu-margin: 0 0 1.6rem;
+$site-nav-font-size: rem-calc(18);
+$site-nav-font-weight: 600;
+$site-nav-header-font-padding: rem-calc(20) 0;
+$site-nav-header-font-margin: rem-calc(35);
+$site-nav-header-color: $white;
+$site-nav-header-active-color: $accent-color;
+$site-nav-footer-color: $primary-color;
 
 .site-nav-menu {
-    @include menu-base;
+    @include menu-simple;
 
-    font-weight: 600;
-    font-size: rem-calc(18);
+    font-weight: $site-nav-font-weight;
+    font-size: $site-nav-font-size;
+    margin: 0;
+
+    .footer & {
+      & a {color: $site-nav-footer-color;}
+
+      & li {
+        @include breakpoint(small only) {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+
+    .header & {
+      li {
+        border-bottom: 4px solid transparent;
+        padding: $site-nav-header-font-padding;
+        margin-right: $site-nav-header-font-margin;
+
+        & a {color: $site-nav-header-color;}
+        &.active {
+          color: $site-nav-header-active-color;
+          border-color: $site-nav-header-active-color;
+        }
+      }
+    }
     
-    // Reset line height to make the height of the overall item easier to calculate
-    > li > a {
-      margin: $site-nav-menu-item-margin;
-      padding: $site-nav-menu-item-padding;
-      border-bottom: 4px solid transparent;
-    }
-
-    // Active state
-    .active > a {
-      border-bottom-color: $color-main;
-      color: $color-main;
-    }
-
-}
-
-.sub-footer-menu {
-  @include menu-simple;
-
-  margin: $sub-footer-menu-margin;
-  font-size: rem-calc(18);
-  font-weight: 600;
-
-  text-align: justify;
-  text-justify: newspaper; 
-  text-align-last: justify;
-
-  li {margin-right: 0;}
-
-  a {color: $medium-gray;}
 }
