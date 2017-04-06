@@ -3952,7 +3952,7 @@ a.thumbnail {
             transform: translateY(-50%); }
 
 .top-bar {
-  padding: 0.5rem; }
+  padding: 0; }
   .top-bar::before, .top-bar::after {
     display: table;
     content: ' '; }
@@ -3960,7 +3960,7 @@ a.thumbnail {
     clear: both; }
   .top-bar,
   .top-bar ul {
-    background-color: #e6e6e6; }
+    background-color: transparent; }
   .top-bar input {
     max-width: 200px;
     margin-right: 1rem; }
@@ -4003,23 +4003,7 @@ body {
   background-color: white; }
 
 /* ---------------- Fonts and typography ----------------*/
-.initial-letter-red::first-letter {
-  border-bottom: 4px solid #FF61A1; }
-
 /* ------------------ Labels ------------- */
-.label {
-  font-weight: 900;
-  font-family: Gilroy, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
-  .label.big {
-    padding: 0.7rem 0.6rem;
-    font-size: 1.6rem; }
-  .label.sale {
-    background-color: #FF61A1;
-    color: #fefefe; }
-  .label.best-deal {
-    background-color: #848D92;
-    color: #0a0a0a; }
-
 /* ------------------ Buttons ------------- */
 .button {
   font-weight: 500; }
@@ -4060,22 +4044,6 @@ body {
       border-color: #FF61A1; }
 
 /* ------------------ Pagination ------------- */
-.pagination {
-  font-weight: 600; }
-  .pagination a {
-    padding: 1.25rem 1.875rem;
-    background: #fefefe;
-    color: #FF61A1;
-    cursor: default;
-    border-bottom: 4px solid #F2F2F2;
-    cursor: pointer; }
-  .pagination .current {
-    padding: 1.25rem 1.875rem;
-    background: #fefefe;
-    color: #FF61A1;
-    cursor: default;
-    border-bottom: 4px solid #FF61A1; }
-
 /* ------------------ Tabs ------------- */
 .tabs {
   border: none; }
@@ -4170,27 +4138,13 @@ body {
   font-style: normal; }
 /* END Black */
 /* ---------------- Footer ----------------*/
+.header {
+  background-color: #08021F; }
+
+/* ---------------- Footer ----------------*/
 .footer {
-  background-color: #F2F2F2;
-  padding: 3.75rem 0; }
-
-.footer-links-group ul {
-  margin: 0; }
-.footer-links-group li {
-  margin-bottom: 0.9375rem; }
-.footer-links-group li,
-.footer-links-group li a {
-  color: #0a0a0a;
-  font-size: 1rem;
-  line-height: 1.1; }
-.footer-links-group .list-header {
-  margin-bottom: 1.875rem; }
-.footer-links-group .list-header,
-.footer-links-group .list-header a {
-  font-size: 1.125rem; }
-
-.sub-footer {
-  background-color: #fefefe;
-  color: #939393;
-  min-height: 9.375rem;
-  padding: 2.5rem 0; }
+  background-color: #1B2129;
+  padding: 3.75rem 0;
+  color: #848D92; }
+  .footer a {
+    color: #fefefe; }

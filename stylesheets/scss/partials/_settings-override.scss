@@ -65,27 +65,13 @@ $loy-button-palette: map-merge($foundation-palette, (
   blank: #FFFFFF, // white
 )) !default;
 
-// $loy-palette: (
-//   primary: #405BFF,
-//   primary-lighten: #4657FF,
-//   accent: #FF61A1,     
-//   secondary: #848D92,
-//   secondary-lighten: #748290,
-//   neutral: #F2F2F2,
-//   success: #3adb76,
-//   warning: #ffae00,
-//   alert: #cc4b37,
-// ) !default;
-
-$main-color: #FF61A1; // bubble gum pink
-$accent-color: #405BFF; // lightish blue
-$info-color: #848D92; // bluish grey
-$neutral-color: #F2F2F2; // greyish biege
-
 $primary-lighten-color: #4657FF; // lighten blue
 $accent-color: #FF61A1; // bubble gum pink
 $secondary-lighten-color: #748290; // light grey
 $neutral-color: #F2F2F2; // greyish biege
+
+$footer-bg: #1B2129; // midnight blue footer background
+$header-bg: #08021F; // lighter black header background
 
 $light-gray: #e6e6e6;
 $medium-gray: #939393;
@@ -650,8 +636,8 @@ $tooltip-radius: $global-radius;
 // 37. Top Bar
 // -----------
 
-$topbar-padding: 0.5rem;
-$topbar-background: $light-gray;
+$topbar-padding: 0;
+$topbar-background: transparent;
 $topbar-submenu-background: $topbar-background;
 $topbar-title-spacing: 0.5rem 1rem 0.5rem 0;
 $topbar-input-width: 200px;

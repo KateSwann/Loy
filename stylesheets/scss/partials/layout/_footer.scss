@@ -1,38 +1,9 @@
 /* ---------------- Footer ----------------*/
 
 .footer {
-	background-color: $neutral-color;
+	background-color: $footer-bg;
 	padding: rem-calc(60) 0;
-}
+	color: $secondary-color;
 
-.footer-links-group {
-	ul {margin: 0;}
-
-	li {
-		margin-bottom: rem-calc(15);
-	}
-
-	li,
-	li a {
-		color: $black;
-		font-size: rem-calc(16);
-		line-height: 1.1;
-	}
-
-	.list-header {
-		margin-bottom: rem-calc(30);
-	}
-
-	.list-header,
-	.list-header a {
-		font-size: rem-calc(18);
-	}
-}
-
-.sub-footer {
-	background-color: $white;
-	color: $medium-gray;
-	min-height: rem-calc(150);
-	padding: rem-calc(40) 0;
-
+	a {color: $white;}
 }

@@ -10204,4 +10204,5 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
   // Window exports
   Foundation.plugin(ResponsiveAccordionTabs, 'ResponsiveAccordionTabs');
-}(jQuery);
+}(jQuery);;
+$(document).foundation();
