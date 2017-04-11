@@ -1714,7 +1714,7 @@ kbd {
 .button {
   display: inline-block;
   vertical-align: middle;
-  margin: 0 0 1rem 0;
+  margin: 0;
   padding: 0.85em 1em;
   -webkit-appearance: none;
   border: 1px solid transparent;
@@ -2386,7 +2386,7 @@ select {
     cursor: not-allowed; }
 
 .button-group {
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   font-size: 0; }
   .button-group::before, .button-group::after {
     display: table;
@@ -3022,6 +3022,48 @@ select {
 
 .no-js [data-responsive-menu] ul {
   display: none; }
+
+.menu-icon {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 16px;
+  cursor: pointer; }
+  .menu-icon::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #fefefe;
+    box-shadow: 0 7px 0 #fefefe, 0 14px 0 #fefefe;
+    content: ''; }
+  .menu-icon:hover::after {
+    background: #939393;
+    box-shadow: 0 7px 0 #939393, 0 14px 0 #939393; }
+
+.menu-icon.dark {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 16px;
+  cursor: pointer; }
+  .menu-icon.dark::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #0a0a0a;
+    box-shadow: 0 7px 0 #0a0a0a, 0 14px 0 #0a0a0a;
+    content: ''; }
+  .menu-icon.dark:hover::after {
+    background: #8a8a8a;
+    box-shadow: 0 7px 0 #8a8a8a, 0 14px 0 #8a8a8a; }
 
 .is-off-canvas-open {
   overflow: hidden; }
@@ -4015,6 +4057,7 @@ body {
 
 /* ------------------ Menu ------------- */
 .site-nav-menu {
+  display: inline-block;
   font-weight: 600;
   font-size: 1.125rem;
   margin: 0; }
@@ -4027,12 +4070,6 @@ body {
   .site-nav-menu li {
     margin-left: 0;
     margin-right: 1rem; }
-  .footer .site-nav-menu a {
-    color: #405BFF; }
-  @media screen and (max-width: 39.9375em) {
-    .footer .site-nav-menu li {
-      width: 100%;
-      text-align: center; } }
   .header .site-nav-menu li {
     border-bottom: 4px solid transparent;
     padding: 1.25rem 0;
@@ -4042,6 +4079,17 @@ body {
     .header .site-nav-menu li.active {
       color: #FF61A1;
       border-color: #FF61A1; }
+  .footer .site-nav-menu a {
+    color: #405BFF; }
+  @media screen and (max-width: 39.9375em) {
+    .site-nav-menu {
+      font-size: 1.6875rem; }
+      .site-nav-menu li {
+        width: 100%;
+        text-align: center; }
+      .header .site-nav-menu li {
+        margin-right: 0;
+        border-bottom: 0; } }
 
 /* ------------------ Pagination ------------- */
 /* ------------------ Tabs ------------- */
@@ -4139,8 +4187,58 @@ body {
 /* END Black */
 /* ---------------- Footer ----------------*/
 .header {
-  background-color: #08021F; }
+  background-color: #08021F;
+  font-size: 1.125rem;
+  color: #fefefe; }
 
+.region-confirmation-button-group {
+  margin-bottom: 0;
+  font-size: 0;
+  display: inline-block; }
+  .region-confirmation-button-group::before, .region-confirmation-button-group::after {
+    display: table;
+    content: ' '; }
+  .region-confirmation-button-group::after {
+    clear: both; }
+  .region-confirmation-button-group .button {
+    margin: 0;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    font-size: 0.9rem; }
+    .region-confirmation-button-group .button:last-child {
+      margin-right: 0; }
+  @media screen and (max-width: 39.9375em) {
+    .region-confirmation-button-group {
+      display: none !important; } }
+  .region-confirmation-button-group .button-group-title {
+    color: #848D92;
+    font-size: 1.125rem;
+    padding-right: 1.25rem;
+    vertical-align: middle; }
+  .region-confirmation-button-group .button {
+    font-size: 1.125rem;
+    font-weight: 400;
+    padding: 0.4375rem 0.9375rem; }
+  .region-confirmation-button-group .button.blank {
+    color: #405BFF; }
+  .region-confirmation-button-group .button.transparent {
+    background-color: transparent; }
+
+@media screen and (max-width: 39.9375em) {
+  #header-nav {
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5; }
+
+  .toggle-header-nav {
+    position: fixed;
+    right: 1.25rem;
+    top: 0.6875rem;
+    z-index: 6; } }
 /* ---------------- Footer ----------------*/
 .footer {
   background-color: #1B2129;

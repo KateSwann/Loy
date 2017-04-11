@@ -11,22 +11,10 @@ $site-nav-footer-color: $primary-color;
 .site-nav-menu {
     @include menu-simple;
 
+    display: inline-block;
     font-weight: $site-nav-font-weight;
     font-size: $site-nav-font-size;
     margin: 0;
-
-    // Site navigation menu for FOOTER
-
-    .footer & {
-      & a {color: $site-nav-footer-color;}
-
-      & li {
-        @include breakpoint(small only) {
-          width: 100%;
-          text-align: center;
-        }
-      }
-    }
 
     // Site navigation menu for HEADER
 
@@ -43,5 +31,34 @@ $site-nav-footer-color: $primary-color;
         }
       }
     }
-    
+
+    // Site navigation menu for FOOTER
+
+    .footer & {
+      & a {color: $site-nav-footer-color;}
+
+    }
+
+    // MEDIUM QUERIES for Site navigation menu    
+
+    @include breakpoint(small only) {
+      font-size: $site-nav-font-size * 1.5;
+
+      & li {
+          width: 100%;
+          text-align: center;
+        }
+
+      .header & {
+        li {
+          margin-right: 0;
+          border-bottom: 0;
+        }
+      }
+    }
 }
+
+
+
+
+

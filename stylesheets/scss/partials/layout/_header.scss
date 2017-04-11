@@ -1,5 +1,58 @@
 /* ---------------- Footer ----------------*/
 
+$header-font-size: rem-calc(18);
+
 .header {
 	background-color: $header-bg;
+	font-size: $header-font-size;
+	color: $white;
+}
+
+
+.region-confirmation-button-group {
+    @include button-group($buttongroup-child-selector);
+    @include hide-for-only(small);
+
+    display: inline-block;
+
+    & .button-group-title {
+      color: $secondary-color;
+      font-size: $header-font-size;
+      padding-right: rem-calc(20px);
+      vertical-align: middle;
+    }
+
+    & .button {
+      font-size: $header-font-size;
+      font-weight: 400;
+      padding: rem-calc(7px) rem-calc(15px);
+    }
+    & .button.blank {
+      color: $primary-color;
+    }
+
+    & .button.transparent {
+      background-color: transparent;
+    }
+}
+
+
+
+@include breakpoint(small only) {
+  #header-nav {
+      background: rgba(0, 0, 0, 0.9);
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 5;
+  }
+
+  .toggle-header-nav {
+      position: fixed;
+      right: rem-calc(20px);
+      top: rem-calc(11px);
+      z-index: 6;
+  }
 }

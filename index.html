@@ -18,75 +18,63 @@
   </head>
 
   <body>
-  <div class="top-bar" id="example-menu">
-    <div class="top-bar-left">
-      <ul class="dropdown menu" data-responsive-menu="drilldown medium-dropdown">
-        <li class="menu-text">Site Title</li>
-        <li>
-          <a href="#">One</a>
-          <ul class="menu vertical">
-            <li><a href="#">One</a></li>
-            <li><a href="#">Two</a></li>
-            <li><a href="#">Three</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Two</a></li>
-        <li><a href="#">Three</a></li>
-      </ul>
-    </div>
-    <div class="top-bar-right">
-      <ul class="menu">
-        <li><input type="search" placeholder="Search"></li>
-        <li><button type="button" class="button">Search</button></li>
-      </ul>
-    </div>
-</div>
 
-<div class="top-bar">
-  <div class="top-bar-title">
-    <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
-      <button class="menu-icon dark" type="button" data-toggle></button>
-    </span>
-    <strong>Site Title</strong>
-  </div>
-  <div id="responsive-menu">
-    <div class="top-bar-left">
-      <ul class="dropdown menu" data-dropdown-menu>
-        <li>
-          <a href="#">One</a>
-          <ul class="menu vertical">
-            <li><a href="#">One</a></li>
-            <li><a href="#">Two</a></li>
-            <li><a href="#">Three</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Two</a></li>
-        <li><a href="#">Three</a></li>
-      </ul>
-    </div>
-    <div class="top-bar-right">
-      <ul class="menu">
-        <li><input type="search" placeholder="Search"></li>
-        <li><button type="button" class="button">Search</button></li>
-      </ul>
-    </div>
-  </div>
-</div>
+  <header class="header top-bar stacked-for-medium">
 
+      <div class="row columns">
+
+          <h1 class="top-bar-title">
+            <a class="logo-ico" href="#">Loy</a>
+          </h1>
+
+          <span data-responsive-toggle="header-nav" data-hide-for="medium">
+            <button class="menu-icon toggle-header-nav" type="button" data-toggle="header-nav"></button>
+          </span>
+
+          <div id="header-nav">
+            <div class="top-bar-left">
+              <a class="region-link regipn-ico" href="#">Пенза</a>
+
+              <div class="region-confirmation-button-group">
+                <span class="button-group-title">Это Ваш город?</span>
+
+                <a class="button blank" href="#">Да</a>
+                <a class="button transparent" href="#">Нет</a>
+              </div>
+            </div>
+
+            <div class="top-bar-right">
+              <a href="#" class="button blank hollow">Личный кабинет</a>
+
+              <ul class="site-nav-menu">
+                <li class="active">Заведения с кэшбеком</li>
+                <li><a href="#">Партнерам</a></li>
+                <li><a href="#">Поддержка</a> </li>
+              </ul>
+            </div>
+
+          </div>
+      </div>
+
+  </header>
+
+
+<!--
   <div class="top-bar header">
     <div class="top-bar-title">
         <strong>Site Title</strong>
     </div>
 
-      <div class="top-bar-right">
-        <ul class="site-nav-menu">
-          <li class="active">Заведения с кэшбеком</li>
-          <li><a href="#">Партнерам</a></li>
-          <li><a href="#">Поддержка</a> </li>
-        </ul>
-      </div>
+    <div class="top-bar-right">
+      <ul class="site-nav-menu">
+        <li class="active">Заведения с кэшбеком</li>
+        <li><a href="#">Партнерам</a></li>
+        <li><a href="#">Поддержка</a> </li>
+      </ul>
+    </div>
   </div>
-  
+-->
+
     <div class="row">
       <div class="large-12 columns">
         <h1 class="initial-letter-red">Кожаный диван &#0171;Монтана&#0187; прямой</h1>
@@ -301,39 +289,35 @@
       </div>
     </div>
 
-    <div class="footer">
+    <footer class="footer">
       <div class="row">
         <div class="medium-3 columns text-center medium-text-left" style="background-color: gold;">8 800 134-654-2</div>
 
         <div class="medium-9 columns">
-          <div class="row">
 
-            <div class="large-9 columns text-center medium-text-left"  style="background-color: grey;">
-              <ul class="site-nav-menu">
-                <li><a href="#">О системе лояльности</a></li>
-                <li><a href="#">Заведения с кэшбеком</a></li>
-                <li><a href="#">Партнерам</a></li>
-                <li><a href="#">Поддержка</a> </li>
-              </ul>
-              <br>
-              Дополнительная информация   Работа у нас 
-            </div>
-
-            <div class="large-3 columns text-center large-text-right"  style="background-color: pink;">
-              Ряд иконок
-            </div>
+          <div class="large-9 columns text-center medium-text-left"  style="background-color: grey;">
+            <ul class="site-nav-menu">
+              <li><a href="#">О системе лояльности</a></li>
+              <li><a href="#">Заведения с кэшбеком</a></li>
+              <li><a href="#">Партнерам</a></li>
+              <li><a href="#">Поддержка</a> </li>
+            </ul>
+            <br>
+            Дополнительная информация   Работа у нас 
           </div>
 
-          <div class="row">
-            <div class="medium-6 columns text-center"  style="background-color: lightgrey;">English</div>
+          <div class="large-3 columns text-center large-text-right"  style="background-color: pink;">
+            Ряд иконок
+          </div>
 
-            <div class="medium-6 columns text-center medium-text-right" style="background-color: lightpink;">
-              &#169; 2017, АО &#0171;Лой&#0187;, официальный сайт
-            </div>
+          <div class="medium-6 columns text-center"  style="background-color: lightgrey;">English</div>
+
+          <div class="medium-6 columns text-center medium-text-right" style="background-color: lightpink;">
+            &#169; 2017, АО &#0171;Лой&#0187;, официальный сайт
           </div>
         </div>
       </div>
-    </div>
+    </footer>
 
 
      <script src="js/assets/jquery.min.js"></script>
