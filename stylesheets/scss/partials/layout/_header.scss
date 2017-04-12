@@ -3,9 +3,9 @@
 $header-font-size: rem-calc(18);
 
 .header {
-	background-color: $header-bg;
-	font-size: $header-font-size;
-	color: $white;
+    background-color: $header-bg;
+    font-size: $header-font-size;
+    color: $white;
 }
 
 
@@ -36,6 +36,52 @@ $header-font-size: rem-calc(18);
     }
 }
 
+.user-nav {
+    @include clearfix;
+    float: right;
+
+    & .button.signin {
+        font-size: $header-font-size;
+        padding: rem-calc(11px) rem-calc(24px);
+    }
+
+    & .avatar {
+        border-radius: 50%;
+        background-color: #ccc;
+        width: 40px;
+        height: 40px;
+        margin: 0 0 0 15px;
+    }
+
+
+    @include breakpoint(small only) {
+        float: none;
+        text-align: center;
+
+        border-bottom: 2px solid $white;
+        width: calc(100% - 40px);
+        margin: 60px auto 40px;
+        padding-bottom: 40px;
+
+        & .button.signin {
+            color: $accent-color;
+            border-color: $accent-color;
+        }
+
+        .user-profile {
+            display: inline-block;
+            font-size: 24px;
+            line-height: 56px;
+        }
+
+        & .avatar {
+            width: 56px;
+            height: 56px;
+            float: left;
+            margin: 0 15px 0 0;
+        }
+    }
+}
 
 
 @include breakpoint(small only) {
@@ -47,6 +93,7 @@ $header-font-size: rem-calc(18);
       left: 0;
       right: 0;
       z-index: 5;
+      overflow: auto;
   }
 
   .toggle-header-nav {

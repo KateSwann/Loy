@@ -25,6 +25,8 @@ $site-nav-footer-color: $primary-color;
         margin-right: $site-nav-header-font-margin;
 
         & a {color: $site-nav-header-color;}
+        & a:hover {color: scale-color($site-nav-header-color, $lightness: -14%);}
+
         &.active {
           color: $site-nav-header-active-color;
           border-color: $site-nav-header-active-color;
@@ -36,6 +38,7 @@ $site-nav-footer-color: $primary-color;
 
     .footer & {
       & a {color: $site-nav-footer-color;}
+      & a:hover {color: scale-color($site-nav-footer-color, $lightness: -14%);}
 
     }
 

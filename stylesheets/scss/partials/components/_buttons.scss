@@ -1,13 +1,26 @@
 /* ------------------ Buttons ------------- */
+$mobile-button-font-size: rem-calc(22px);
+$mobile-button-padding: rem-calc(12px) rem-calc(42px);
 
-// customize default foundation stiles
+
+// customize default foundation styles
 
 .button {
-	font-weight: 500;
-}
+    font-weight: 500;
 
-.button.hollow {
-	@include button-hollow;
-	
-	border-width: rem-calc(2) !important;
+    &.hollow {
+        @include button-hollow;
+        
+        border-width: rem-calc(2) !important;
+    }
+
+
+    // styles for mobile site version
+
+    @include breakpoint(small only) {
+        &.mobile-resized {
+            font-size: $mobile-button-font-size;
+            padding: $mobile-button-padding;
+        }
+    }
 }

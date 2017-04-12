@@ -3952,11 +3952,14 @@ body {
 /* ------------------ Buttons ------------- */
 .button {
   font-weight: 500; }
-
-.button.hollow {
-  border-width: 0.125rem !important; }
-  .button.hollow, .button.hollow:hover, .button.hollow:focus {
-    background-color: transparent; }
+  .button.hollow {
+    border-width: 0.125rem !important; }
+    .button.hollow, .button.hollow:hover, .button.hollow:focus {
+      background-color: transparent; }
+  @media screen and (max-width: 39.9375em) {
+    .button.mobile-resized {
+      font-size: 1.375rem;
+      padding: 0.75rem 2.625rem; } }
 
 /* ------------------ Menu ------------- */
 .site-nav-menu {
@@ -3979,11 +3982,15 @@ body {
     margin-right: 2.1875rem; }
     .header .site-nav-menu li a {
       color: #fefefe; }
+    .header .site-nav-menu li a:hover {
+      color: #dadada; }
     .header .site-nav-menu li.active {
       color: #FF61A1;
       border-color: #FF61A1; }
   .footer .site-nav-menu a {
     color: #405BFF; }
+  .footer .site-nav-menu a:hover {
+    color: #1335ff; }
   @media screen and (max-width: 39.9375em) {
     .site-nav-menu {
       font-size: 1.6875rem; }
@@ -4127,6 +4134,43 @@ body {
   .region-confirmation-button-group .button.transparent {
     background-color: transparent; }
 
+.user-nav {
+  float: right; }
+  .user-nav::before, .user-nav::after {
+    display: table;
+    content: ' '; }
+  .user-nav::after {
+    clear: both; }
+  .user-nav .button.signin {
+    font-size: 1.125rem;
+    padding: 0.6875rem 1.5rem; }
+  .user-nav .avatar {
+    border-radius: 50%;
+    background-color: #ccc;
+    width: 40px;
+    height: 40px;
+    margin: 0 0 0 15px; }
+  @media screen and (max-width: 39.9375em) {
+    .user-nav {
+      float: none;
+      text-align: center;
+      border-bottom: 2px solid #fefefe;
+      width: calc(100% - 40px);
+      margin: 60px auto 40px;
+      padding-bottom: 40px; }
+      .user-nav .button.signin {
+        color: #FF61A1;
+        border-color: #FF61A1; }
+      .user-nav .user-profile {
+        display: inline-block;
+        font-size: 24px;
+        line-height: 56px; }
+      .user-nav .avatar {
+        width: 56px;
+        height: 56px;
+        float: left;
+        margin: 0 15px 0 0; } }
+
 @media screen and (max-width: 39.9375em) {
   #header-nav {
     background: rgba(0, 0, 0, 0.9);
@@ -4135,7 +4179,8 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 5; }
+    z-index: 5;
+    overflow: auto; }
 
   .toggle-header-nav {
     position: fixed;
