@@ -1,1 +1,11 @@
 /* ---------------- Fonts and typography ----------------*/
+
+
+@mixin custom-anchor-styles($custom-anchor-color) {
+	color: $custom-anchor-color;
+
+	&:hover,
+    &:focus {
+    	color: scale-color($custom-anchor-color, $lightness: -14%);
+	}
+}

@@ -24,8 +24,7 @@ $site-nav-footer-color: $primary-color;
         padding: $site-nav-header-font-padding;
         margin-right: $site-nav-header-font-margin;
 
-        & a {color: $site-nav-header-color;}
-        & a:hover {color: scale-color($site-nav-header-color, $lightness: -14%);}
+        & a {@include custom-anchor-styles($site-nav-header-color);}
 
         &.active {
           color: $site-nav-header-active-color;
@@ -37,27 +36,26 @@ $site-nav-footer-color: $primary-color;
     // Site navigation menu for FOOTER
 
     .footer & {
-      & a {color: $site-nav-footer-color;}
-      & a:hover {color: scale-color($site-nav-footer-color, $lightness: -14%);}
-
+      & a {@include custom-anchor-styles($site-nav-footer-color);}
     }
 
     // MEDIUM QUERIES for Site navigation menu    
 
     @include breakpoint(small only) {
-      font-size: $site-nav-font-size * 1.5;
+        width: 100%;
+        font-size: $site-nav-font-size * 1.5;
 
-      & li {
+        & li {
           width: 100%;
           text-align: center;
         }
 
-      .header & {
-        li {
-          margin-right: 0;
-          border-bottom: 0;
+        .header & {
+            li {
+              margin-right: 0;
+              border-bottom: 0;
+            }
         }
-      }
     }
 }
 

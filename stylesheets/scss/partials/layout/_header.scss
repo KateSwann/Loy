@@ -1,13 +1,36 @@
 /* ---------------- Footer ----------------*/
 
 $header-font-size: rem-calc(18);
+$header-x-padding-mobile: rem-calc(25);
+$header-y-padding-mobile: rem-calc(30);
+
 
 .header {
-    background-color: $header-bg;
+    background-color: #352e45; //test value instead of transparent
     font-size: $header-font-size;
     color: $white;
+    width:100%;
+    transition: background 0.7s ease-in-out 0s;
+    animation-delay: 800ms;
+    animation-duration: 600ms;
+    transform: none; // rewrite .sticky styles
+    z-index: inherit;
+
+    &.is-stuck {
+        background-color: $header-bg;
+    }
 }
 
+.region-opener {
+    @include custom-anchor-styles($white);
+    vertical-align: sub;
+
+
+    @include breakpoint(small only) {
+        font-size: rem-calc(24);
+        font-weight: 500;
+    }
+}
 
 .region-confirmation-button-group {
     @include button-group($buttongroup-child-selector);
@@ -18,14 +41,14 @@ $header-font-size: rem-calc(18);
     & .button-group-title {
       color: $secondary-color;
       font-size: $header-font-size;
-      padding-right: rem-calc(20px);
+      padding-right: rem-calc(20);
       vertical-align: middle;
     }
 
     & .button {
       font-size: $header-font-size;
       font-weight: 400;
-      padding: rem-calc(7px) rem-calc(15px);
+      padding: rem-calc(7) rem-calc(15);
     }
     & .button.blank {
       color: $primary-color;
@@ -34,23 +57,31 @@ $header-font-size: rem-calc(18);
     & .button.transparent {
       background-color: transparent;
     }
+
+
 }
 
 .user-nav {
+    $user-avatar-size: rem-calc(40);
+    $user-avatar-size-mobile: rem-calc(56);
+    $user-avatar-side-padding: rem-calc(15);
+
+
     @include clearfix;
     float: right;
 
     & .button.signin {
         font-size: $header-font-size;
-        padding: rem-calc(11px) rem-calc(24px);
+        padding: rem-calc(11) rem-calc(24);
     }
+
 
     & .avatar {
         border-radius: 50%;
-        background-color: #ccc;
-        width: 40px;
-        height: 40px;
-        margin: 0 0 0 15px;
+        background-color: #ccc; //test value
+        width: $user-avatar-size;
+        height: $user-avatar-size;
+        margin: 0 0 0 $user-avatar-side-padding;
     }
 
 
@@ -59,8 +90,7 @@ $header-font-size: rem-calc(18);
         text-align: center;
 
         border-bottom: 2px solid $white;
-        width: calc(100% - 40px);
-        margin: 60px auto 40px;
+        margin: 40px auto;
         padding-bottom: 40px;
 
         & .button.signin {
@@ -68,24 +98,35 @@ $header-font-size: rem-calc(18);
             border-color: $accent-color;
         }
 
-        .user-profile {
+        & .user-profile {
             display: inline-block;
-            font-size: 24px;
-            line-height: 56px;
+            font-size: rem-calc(24);
+            line-height: $user-avatar-size-mobile;
         }
 
         & .avatar {
-            width: 56px;
-            height: 56px;
             float: left;
-            margin: 0 15px 0 0;
+            width: $user-avatar-size-mobile;
+            height: $user-avatar-size-mobile;
+            margin: 0 $user-avatar-side-padding 0 0;
         }
+    }
+
+    @include breakpoint(medium) {
+        & .user-profile {@include custom-anchor-styles($secondary-color); }
     }
 }
 
 
 @include breakpoint(small only) {
-  #header-nav {
+    .toggle-header-nav {
+      position: fixed;
+      right: rem-calc(20px);
+      top: rem-calc(11px);
+      z-index: 6;
+    }
+
+    #header-nav {
       background: rgba(0, 0, 0, 0.9);
       position: fixed;
       top: 0;
@@ -93,13 +134,16 @@ $header-font-size: rem-calc(18);
       left: 0;
       right: 0;
       z-index: 5;
+      padding: $header-y-padding-mobile $header-x-padding-mobile;
       overflow: auto;
-  }
+    }
+}
 
-  .toggle-header-nav {
-      position: fixed;
-      right: rem-calc(20px);
-      top: rem-calc(11px);
-      z-index: 6;
-  }
+
+// Horizontal align of the header components for normal state
+
+@include breakpoint(medium) {
+    #header-nav {margin-top: 40px; }
+    .region-opener-group {padding-top: 10px; }
+    .user-nav {padding-top: 8px; }
 }
