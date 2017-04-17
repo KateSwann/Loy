@@ -113,11 +113,17 @@
               all: {
                 src: 'images/icons/*.png',
                 dest: 'images/icons/dest/spritesheet.png',
+                imgPath: '../../images/icons/dest/spritesheet.png', // manually override default path to the sprite
+                
+                retinaSrcFilter: 'images/icons/*@2x.png',
+                retinaDest: 'images/icons/dest/spritesheet@2x.png',
+                retinaImgPath: '../../images/icons/dest/spritesheet@2x.png', // manually override default path to the retina sprite
+
                 destCss: 'stylesheets/scss/partials/components/_sprites.scss',
-                imgPath: '../../images/icons/dest/spritesheet.png', // manually setup default path to sprite
                 padding: 2
               }
             },
+
 
         // --------------------------------------
         // Uglify Configuration

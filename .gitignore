@@ -1,0 +1,5 @@
+*.orig
+/.sass-cache
+
+# dependencies
+/node_modules

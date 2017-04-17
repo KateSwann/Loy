@@ -3961,189 +3961,100 @@ body {
       font-size: 1.375rem;
       padding: 0.75rem 2.625rem; } }
 
-.icon-appstore-2x:before, .icon-appstore:before, .icon-fb-2x:before, .icon-fb:before, .icon-google-play-2x:before, .icon-google-play:before, .icon-gp-2x:before, .icon-gp:before, .icon-lang-eng-2x:before, .icon-lang-eng:before, .icon-loy-logo-2x:before, .icon-loy-logo:before, .icon-map-mark-2x:before, .icon-map-mark:before, .icon-play-2x:before, .icon-play:before, .icon-promo-get-2x:before, .icon-promo-get:before, .icon-promo-payoff-2x:before, .icon-promo-payoff:before, .icon-promo-visit-2x:before, .icon-promo-visit:before, .icon-search-2x:before, .icon-search-inverse-2x:before, .icon-search-inverse:before, .icon-search:before, .icon-tw-2x:before, .icon-tw:before, .icon-vk-2x:before, .icon-vk:before {
+/* ------------------ Sprites and icons ------------- */
+.icon-appstore:before, .icon-fb:before, .icon-google-play:before, .icon-gp:before, .icon-lang-eng:before, .icon-loy-logo:before, .icon-map-mark:before, .icon-play:before, .icon-promo-get:before, .icon-promo-payoff:before, .icon-promo-visit:before, .icon-search-inverse:before, .icon-search:before, .icon-tw:before, .icon-vk:before {
   background-image: url(../../images/icons/dest/spritesheet.png);
   display: inline-block;
   content: "";
   vertical-align: middle; }
 
-.icon-appstore-2x:before {
-  background-image: url(../../images/icons/dest/spritesheet.png);
-  background-position: -580px 0px;
-  width: 400px;
-  height: 130px; }
-
 .icon-appstore:before {
   background-image: url(../../images/icons/dest/spritesheet.png);
-  background-position: -726px -410px;
+  background-position: -292px 0px;
   width: 200px;
   height: 65px; }
-
-.icon-fb-2x:before {
-  background-image: url(../../images/icons/dest/spritesheet.png);
-  background-position: -872px -264px;
-  width: 88px;
-  height: 88px; }
 
 .icon-fb:before {
   background-image: url(../../images/icons/dest/spritesheet.png);
-  background-position: -526px -290px;
+  background-position: -412px -134px;
   width: 44px;
   height: 44px; }
-
-.icon-google-play-2x:before {
-  background-image: url(../../images/icons/dest/spritesheet.png);
-  background-position: -580px -132px;
-  width: 400px;
-  height: 130px; }
 
 .icon-google-play:before {
   background-image: url(../../images/icons/dest/spritesheet.png);
-  background-position: -726px -477px;
+  background-position: -292px -67px;
   width: 200px;
   height: 65px; }
 
-.icon-gp-2x:before {
-  background-image: url(../../images/icons/dest/spritesheet.png);
-  background-position: -290px -380px;
-  width: 88px;
-  height: 88px; }
-
 .icon-gp:before {
   background-image: url(../../images/icons/dest/spritesheet.png);
-  background-position: -928px -477px;
+  background-position: -366px -134px;
   width: 44px;
   height: 44px; }
 
-.icon-lang-eng-2x:before {
-  background-image: url(../../images/icons/dest/spritesheet.png);
-  background-position: -928px -410px;
-  width: 48px;
-  height: 48px; }
-
 .icon-lang-eng:before {
   background-image: url(../../images/icons/dest/spritesheet.png);
-  background-position: -412px -470px;
+  background-position: -458px -134px;
   width: 24px;
   height: 24px; }
 
-.icon-loy-logo-2x:before {
-  background-image: url(../../images/icons/dest/spritesheet.png);
-  background-position: -290px -290px;
-  width: 144px;
-  height: 88px; }
-
 .icon-loy-logo:before {
   background-image: url(../../images/icons/dest/spritesheet.png);
-  background-position: -872px -354px;
+  background-position: -292px -134px;
   width: 72px;
   height: 44px; }
 
-.icon-map-mark-2x:before {
-  background-image: url(../../images/icons/dest/spritesheet.png);
-  background-position: -290px -516px;
-  width: 24px;
-  height: 36px; }
-
 .icon-map-mark:before {
   background-image: url(../../images/icons/dest/spritesheet.png);
-  background-position: -962px -300px;
+  background-position: -428px -180px;
   width: 12px;
   height: 18px; }
 
-.icon-play-2x:before {
-  background-image: url(../../images/icons/dest/spritesheet.png);
-  background-position: -470px -380px;
-  width: 84px;
-  height: 84px; }
-
 .icon-play:before {
   background-image: url(../../images/icons/dest/spritesheet.png);
-  background-position: -526px -336px;
+  background-position: -384px -180px;
   width: 42px;
   height: 42px; }
 
-.icon-promo-get-2x:before {
-  background-image: url(../../images/icons/dest/spritesheet.png);
-  background-position: 0px -290px;
-  width: 288px;
-  height: 288px; }
-
 .icon-promo-get:before {
   background-image: url(../../images/icons/dest/spritesheet.png);
-  background-position: -726px -264px;
+  background-position: -146px 0px;
   width: 144px;
   height: 144px; }
-
-.icon-promo-payoff-2x:before {
-  background-image: url(../../images/icons/dest/spritesheet.png);
-  background-position: -290px 0px;
-  width: 288px;
-  height: 288px; }
 
 .icon-promo-payoff:before {
   background-image: url(../../images/icons/dest/spritesheet.png);
-  background-position: -580px -410px;
+  background-position: 0px -146px;
   width: 144px;
   height: 144px; }
-
-.icon-promo-visit-2x:before {
-  background-image: url(../../images/icons/dest/spritesheet.png);
-  background-position: 0px 0px;
-  width: 288px;
-  height: 288px; }
 
 .icon-promo-visit:before {
   background-image: url(../../images/icons/dest/spritesheet.png);
-  background-position: -580px -264px;
+  background-position: 0px 0px;
   width: 144px;
   height: 144px; }
 
-.icon-search-2x:before {
-  background-image: url(../../images/icons/dest/spritesheet.png);
-  background-position: -946px -354px;
-  width: 28px;
-  height: 32px; }
-
-.icon-search-inverse-2x:before {
-  background-image: url(../../images/icons/dest/spritesheet.png);
-  background-position: -382px -470px;
-  width: 28px;
-  height: 32px; }
-
 .icon-search-inverse:before {
   background-image: url(../../images/icons/dest/spritesheet.png);
-  background-position: -962px -264px;
+  background-position: -458px -160px;
   width: 14px;
   height: 16px; }
 
 .icon-search:before {
   background-image: url(../../images/icons/dest/spritesheet.png);
-  background-position: -962px -282px;
+  background-position: -474px -160px;
   width: 14px;
   height: 16px; }
 
-.icon-tw-2x:before {
-  background-image: url(../../images/icons/dest/spritesheet.png);
-  background-position: -380px -380px;
-  width: 88px;
-  height: 88px; }
-
 .icon-tw:before {
   background-image: url(../../images/icons/dest/spritesheet.png);
-  background-position: -290px -470px;
+  background-position: -292px -180px;
   width: 44px;
   height: 44px; }
 
-.icon-vk-2x:before {
-  background-image: url(../../images/icons/dest/spritesheet.png);
-  background-position: -436px -290px;
-  width: 88px;
-  height: 88px; }
-
 .icon-vk:before {
   background-image: url(../../images/icons/dest/spritesheet.png);
-  background-position: -336px -470px;
+  background-position: -338px -180px;
   width: 44px;
   height: 44px; }
 
