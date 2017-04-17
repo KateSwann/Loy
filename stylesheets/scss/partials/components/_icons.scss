@@ -1,0 +1,30 @@
+/* ------------------ Sprites and icons ------------- */
+
+
+%common-sprite-styles {
+    background-image: url(#{$spritesheet-image});
+
+    display: inline-block;
+    content: "";
+    vertical-align: middle;
+}
+
+// General mixin to compile styles for all icons
+@mixin sprites($sprites) {  
+  @each $sprite in $sprites {
+
+    $sprite-name: nth($sprite, 10);
+    .icon-#{$sprite-name}:before {
+      @include sprite($sprite);
+
+      @extend %common-sprite-styles;
+    }
+  }
+}
+
+@include sprites($spritesheet-sprites);
+
+*[class^="icon-"].before-text:before {
+  vertical-align: -1px;
+  margin-right: 4px;
+}

@@ -109,15 +109,15 @@
               }
             },
 
-            // sprite:{
-            //   all: {
-            //     src: 'images/icons/*.png',
-            //     dest: 'images/icons/sprites/spritesheet.png',
-            //     destCss: 'stylesheets/scss/partials/components/_sprites.scss',
-            //     imgPath: '../../images/icons/sprites/spritesheet.png', // manually setup default path to sprite
-            //     padding: 2
-            //   }
-            // },
+            sprite:{
+              all: {
+                src: 'images/icons/*.png',
+                dest: 'images/icons/dest/spritesheet.png',
+                destCss: 'stylesheets/scss/partials/components/_sprites.scss',
+                imgPath: '../../images/icons/dest/spritesheet.png', // manually setup default path to sprite
+                padding: 2
+              }
+            },
 
         // --------------------------------------
         // Uglify Configuration
@@ -132,6 +132,7 @@
                 }
             }
         }
+
     });
 
     // -----------------------------------------
@@ -144,8 +145,8 @@
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-autoprefixer');
+    grunt.loadNpmTasks('grunt-spritesmith');
     // grunt.loadNpmTasks('grunt-babel');
-    // grunt.loadNpmTasks('grunt-spritesmith');
 
 
     // -----------------------------------------

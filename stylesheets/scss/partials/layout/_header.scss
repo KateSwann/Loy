@@ -1,4 +1,4 @@
-/* ---------------- Footer ----------------*/
+/* ---------------- Header ----------------*/
 
 $header-font-size: rem-calc(18);
 $header-x-padding-mobile: rem-calc(25);
@@ -57,15 +57,12 @@ $header-y-padding-mobile: rem-calc(30);
     & .button.transparent {
       background-color: transparent;
     }
-
-
 }
 
 .user-nav {
     $user-avatar-size: rem-calc(40);
     $user-avatar-size-mobile: rem-calc(56);
     $user-avatar-side-padding: rem-calc(15);
-
 
     @include clearfix;
     float: right;
@@ -75,7 +72,6 @@ $header-y-padding-mobile: rem-calc(30);
         padding: rem-calc(11) rem-calc(24);
     }
 
-
     & .avatar {
         border-radius: 50%;
         background-color: #ccc; //test value
@@ -83,7 +79,6 @@ $header-y-padding-mobile: rem-calc(30);
         height: $user-avatar-size;
         margin: 0 0 0 $user-avatar-side-padding;
     }
-
 
     @include breakpoint(small only) {
         float: none;
