@@ -60,6 +60,47 @@ $site-nav-footer-color: $primary-color;
 }
 
 
+// Social icons menu list
+
+.social {
+  @include menu-simple;
+
+  font-size: 0;
+  text-align: justify;
+  margin: 0 auto rem-calc(30);
+  max-width: rem-calc(250);
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+  }
+
+  li {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+  }
+
+  @include breakpoint(medium only) {
+    @include grid-column; // returns the correct left&right indents
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

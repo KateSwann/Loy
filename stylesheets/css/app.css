@@ -3963,7 +3963,6 @@ body {
 
 /* ------------------ Sprites and icons ------------- */
 .icon-appstore:before, .icon-fb:before, .icon-google-play:before, .icon-gp:before, .icon-lang-eng:before, .icon-loy-logo:before, .icon-map-mark:before, .icon-play:before, .icon-promo-get:before, .icon-promo-payoff:before, .icon-promo-visit:before, .icon-search-inverse:before, .icon-search:before, .icon-tw:before, .icon-vk:before {
-  background-image: url(../../images/icons/dest/spritesheet.png);
   display: inline-block;
   content: "";
   vertical-align: middle; }
@@ -3973,92 +3972,152 @@ body {
   background-position: -292px 0px;
   width: 200px;
   height: 65px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .icon-appstore:before {
+      background-image: url(../../images/icons/dest/spritesheet@2x.png);
+      background-size: 492px 290px; } }
 
 .icon-fb:before {
   background-image: url(../../images/icons/dest/spritesheet.png);
   background-position: -412px -134px;
   width: 44px;
   height: 44px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .icon-fb:before {
+      background-image: url(../../images/icons/dest/spritesheet@2x.png);
+      background-size: 492px 290px; } }
 
 .icon-google-play:before {
   background-image: url(../../images/icons/dest/spritesheet.png);
   background-position: -292px -67px;
   width: 200px;
   height: 65px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .icon-google-play:before {
+      background-image: url(../../images/icons/dest/spritesheet@2x.png);
+      background-size: 492px 290px; } }
 
 .icon-gp:before {
   background-image: url(../../images/icons/dest/spritesheet.png);
   background-position: -366px -134px;
   width: 44px;
   height: 44px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .icon-gp:before {
+      background-image: url(../../images/icons/dest/spritesheet@2x.png);
+      background-size: 492px 290px; } }
 
 .icon-lang-eng:before {
   background-image: url(../../images/icons/dest/spritesheet.png);
   background-position: -458px -134px;
   width: 24px;
   height: 24px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .icon-lang-eng:before {
+      background-image: url(../../images/icons/dest/spritesheet@2x.png);
+      background-size: 492px 290px; } }
 
 .icon-loy-logo:before {
   background-image: url(../../images/icons/dest/spritesheet.png);
   background-position: -292px -134px;
   width: 72px;
   height: 44px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .icon-loy-logo:before {
+      background-image: url(../../images/icons/dest/spritesheet@2x.png);
+      background-size: 492px 290px; } }
 
 .icon-map-mark:before {
   background-image: url(../../images/icons/dest/spritesheet.png);
   background-position: -428px -180px;
   width: 12px;
   height: 18px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .icon-map-mark:before {
+      background-image: url(../../images/icons/dest/spritesheet@2x.png);
+      background-size: 492px 290px; } }
 
 .icon-play:before {
   background-image: url(../../images/icons/dest/spritesheet.png);
   background-position: -384px -180px;
   width: 42px;
   height: 42px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .icon-play:before {
+      background-image: url(../../images/icons/dest/spritesheet@2x.png);
+      background-size: 492px 290px; } }
 
 .icon-promo-get:before {
   background-image: url(../../images/icons/dest/spritesheet.png);
   background-position: -146px 0px;
   width: 144px;
   height: 144px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .icon-promo-get:before {
+      background-image: url(../../images/icons/dest/spritesheet@2x.png);
+      background-size: 492px 290px; } }
 
 .icon-promo-payoff:before {
   background-image: url(../../images/icons/dest/spritesheet.png);
   background-position: 0px -146px;
   width: 144px;
   height: 144px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .icon-promo-payoff:before {
+      background-image: url(../../images/icons/dest/spritesheet@2x.png);
+      background-size: 492px 290px; } }
 
 .icon-promo-visit:before {
   background-image: url(../../images/icons/dest/spritesheet.png);
   background-position: 0px 0px;
   width: 144px;
   height: 144px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .icon-promo-visit:before {
+      background-image: url(../../images/icons/dest/spritesheet@2x.png);
+      background-size: 492px 290px; } }
 
 .icon-search-inverse:before {
   background-image: url(../../images/icons/dest/spritesheet.png);
   background-position: -458px -160px;
   width: 14px;
   height: 16px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .icon-search-inverse:before {
+      background-image: url(../../images/icons/dest/spritesheet@2x.png);
+      background-size: 492px 290px; } }
 
 .icon-search:before {
   background-image: url(../../images/icons/dest/spritesheet.png);
   background-position: -474px -160px;
   width: 14px;
   height: 16px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .icon-search:before {
+      background-image: url(../../images/icons/dest/spritesheet@2x.png);
+      background-size: 492px 290px; } }
 
 .icon-tw:before {
   background-image: url(../../images/icons/dest/spritesheet.png);
   background-position: -292px -180px;
   width: 44px;
   height: 44px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .icon-tw:before {
+      background-image: url(../../images/icons/dest/spritesheet@2x.png);
+      background-size: 492px 290px; } }
 
 .icon-vk:before {
   background-image: url(../../images/icons/dest/spritesheet.png);
   background-position: -338px -180px;
   width: 44px;
   height: 44px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .icon-vk:before {
+      background-image: url(../../images/icons/dest/spritesheet@2x.png);
+      background-size: 492px 290px; } }
 
-*[class^="icon-"].before-text:before {
+[class*='icon-'].before-text:before {
   vertical-align: -1px;
   margin-right: 4px; }
 
@@ -4102,6 +4161,42 @@ body {
       .header .site-nav-menu li {
         margin-right: 0;
         border-bottom: 0; } }
+
+.social {
+  font-size: 0;
+  text-align: justify;
+  margin: 0 auto 1.875rem;
+  max-width: 15.625rem; }
+  .social li {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 1; }
+  .social a {
+    padding: 0; }
+  .social li {
+    margin-left: 0;
+    margin-right: 1rem; }
+  .social::after {
+    content: "";
+    display: inline-block;
+    width: 100%; }
+  .social li {
+    display: inline-block;
+    padding: 0;
+    margin: 0; }
+  @media screen and (min-width: 45.625em) and (max-width: 63.9375em) {
+    .social {
+      width: 100%;
+      float: left;
+      padding-right: 0.625rem;
+      padding-left: 0.625rem; } }
+  @media screen and (min-width: 45.625em) and (max-width: 63.9375em) and (min-width: 45.625em) {
+    .social {
+      padding-right: 0.9375rem;
+      padding-left: 0.9375rem; } }
+  @media screen and (min-width: 45.625em) and (max-width: 63.9375em) {
+      .social:last-child:not(:first-child) {
+        float: right; } }
 
 /* ------------------ Pagination ------------- */
 /* ------------------ Tabs ------------- */
