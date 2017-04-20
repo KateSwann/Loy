@@ -6,4 +6,9 @@
 	color: $secondary-color;
 
 	a {color: $white;}
+
+	& [href^=tel] {
+		font-size: rem-calc(24);
+		font-weight: 500;
+	}
 }

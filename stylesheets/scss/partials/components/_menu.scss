@@ -9,54 +9,55 @@ $site-nav-header-active-color: $accent-color;
 $site-nav-footer-color: $primary-color;
 
 .site-nav-menu {
-    @include menu-simple;
+  @include menu-simple;
 
-    display: inline-block;
-    font-weight: $site-nav-font-weight;
-    font-size: $site-nav-font-size;
-    margin: 0;
+  display: inline-block;
+  font-weight: $site-nav-font-weight;
+  font-size: $site-nav-font-size;
+  margin: 0;
 
-    // Site navigation menu for HEADER
+  // Site navigation menu for HEADER
 
-    .header & {
-      li {
-        border-bottom: 4px solid transparent;
-        padding: $site-nav-header-font-padding;
-        margin-right: $site-nav-header-font-margin;
+  .header & {
+    li {
+      border-bottom: 4px solid transparent;
+      padding: $site-nav-header-font-padding;
+      margin-right: $site-nav-header-font-margin;
 
-        & a {@include custom-anchor-styles($site-nav-header-color);}
+      & a {@include custom-anchor-styles($site-nav-header-color);}
 
-        &.active {
-          color: $site-nav-header-active-color;
-          border-color: $site-nav-header-active-color;
-        }
+      &.active {
+        color: $site-nav-header-active-color;
+        border-color: $site-nav-header-active-color;
       }
     }
+  }
 
-    // Site navigation menu for FOOTER
+  // Site navigation menu for FOOTER
 
-    .footer & {
-      & a {@include custom-anchor-styles($site-nav-footer-color);}
+  .footer & {
+    & a {@include custom-anchor-styles($site-nav-footer-color);}
+  }
+
+  // MEDIUM QUERIES for Site navigation menu    
+
+  @include breakpoint(small only) {
+    width: 100%;
+
+    & li {
+      width: 100%;
+      text-align: center;
     }
 
-    // MEDIUM QUERIES for Site navigation menu    
+    .header & {
+      font-size: $site-nav-font-size * 1.5;
 
-    @include breakpoint(small only) {
-        width: 100%;
-        font-size: $site-nav-font-size * 1.5;
-
-        & li {
-          width: 100%;
-          text-align: center;
-        }
-
-        .header & {
-            li {
-              margin-right: 0;
-              border-bottom: 0;
-            }
-        }
+      & li {
+        margin-right: 0;
+        border-bottom: 0;
+      }
     }
+  }
 }
 
 
@@ -84,6 +85,22 @@ $site-nav-footer-color: $primary-color;
 
   @include breakpoint(medium only) {
     @include grid-column; // returns the correct left&right indents
+  }
+}
+
+.subnav {
+  @include menu-simple;
+
+  margin-left: 0;
+  font-weight: 500;
+
+  & li > a {
+    color: $secondary-color;
+    @include custom-anchor-styles($secondary-color);
+  }
+
+  @include breakpoint(small only) {
+    & li {width: 100%;}
   }
 }
 
