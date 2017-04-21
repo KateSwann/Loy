@@ -14,6 +14,11 @@
     </style>
     <script src="js/assets/modernizr.min.js"></script>
 
+    <script src="js/assets/countup.min.js"></script>
+    <script type="text/javascript">
+      var app = angular.module("demoApp",["scrollSpyModule", "countUpModule"]);
+    </script>
+
 
   </head>
 
@@ -299,6 +304,22 @@
             </div>        
           </div>
         </div>
+      </div>
+    </div>
+
+    
+    <div class="row">
+      <div class="large-12 columns">
+        <div ng-app="demoApp" class="ng-scope" cz-shortcut-listen="true">
+            <div style="height:200px">&nbsp;</div>
+
+            <span class="ng-isolate-scope" style="font-size:6em; margin:0; color:#4d63bc;" count-up="" id="animation2" start-val="0" end-val="2765234" duration="2.5" scroll-spy-event="elementFirstScrolledIntoView" scroll-spy="">2765234</span>&#8381;
+
+            <div style="height:250px">&nbsp;</div>
+
+            <h1 class="ng-isolate-scope" style="font-size:6em; margin:0; color:#4d63bc;" count-up="" id="animation3" start-val="0" end-val="6387.42" duration="2.5" decimals="2" scroll-spy-event="elementScrolledIntoView" scroll-spy="">6,387.42</h1> 
+        </div>
+
       </div>
     </div>
 

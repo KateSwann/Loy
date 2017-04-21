@@ -100,6 +100,16 @@
                 dest: 'js/assets/script.js'
             },
 
+            countup: {
+                src: [
+                    'js/develop/countup/angular.min.js',
+                    'js/develop/countup/dest/angular-scroll-spy.min.js',
+                    'js/develop/countup/dest/countUp.min.js',
+                    'js/develop/countup/dest/angular-countUp.min.js'
+                ],
+                dest: 'js/assets/countup.min.js'
+            },
+
             modernizr: {
                 src: [
                     'node_modules/foundation-sites/vendor/modernizr/modernizr.js',
@@ -135,6 +145,14 @@
                     'js/assets/jquery.min.js': ['node_modules/foundation-sites/vendor/jquery/dist/jquery.js'],
                     'js/assets/script.min.js': ['js/assets/script.js'],
                     'js/assets/modernizr.min.js': ['js/assets/modernizr.js']
+                }
+            },
+
+            countup: {                
+              files: {
+                    'js/develop/countup/dest/angular-scroll-spy.min.js': ['js/develop/countup/angular-scroll-spy.js'],
+                    'js/develop/countup/dest/countUp.min.js': ['js/develop/countup/countUp.js'],
+                    'js/develop/countup/dest/angular-countUp.min.js': ['js/develop/countup/angular-countUp.js']
                 }
             }
         }
