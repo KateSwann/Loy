@@ -75,7 +75,46 @@
 }
 
 
+.promo-items-list {
+  @include grid-row;
+
+  .promo-item {
+    @include grid-column(4); // 12 columns ÷ 4 items = 33% width
+    text-align: center;
+
+    @include breakpoint(small only) {
+      @include grid-column;
+
+      padding: 0 10vw;
+    }
+  }
+
+  .promo-item-title {
+    font-family: $body-font-family;
+    font-size: rem-calc(20);
+    color: #464646; // dark grey
+    margin: rem-calc(15 0)
+  }
+
+  .promo-item-text {
+    font-weight: 300;
+    font-size: rem-calc(18);
+    margin: rem-calc(15 0)
+  }
+}
 
 
 
+// .container {
+//   @include grid-row(16) {
+//     .main-content {
+//       // 5/16 = 31.25%
+//       @include grid-column(5);
+//     }
 
+//     .sidebar {
+//       // 11/16 = 68.75%
+//       @include grid-column(11);
+//     }
+//   }
+// }

@@ -48,6 +48,11 @@
 @import "partials/custom";
 
 
+// --------------- helpers ------------------
+@import
+        "partials/helpers/variables.scss";
+
+
 // --------------- base ---------------------
 @import
         "partials/base/typography.scss";
@@ -91,6 +96,7 @@
 // --------------- layout ------------------
 @import
         "partials/layout/header.scss",
+        "partials/layout/sections.scss",
         "partials/layout/footer.scss";
 
 

@@ -1,0 +1,69 @@
+/* ---------------- Sections ----------------*/
+
+
+.hero {}
+.partners {}
+
+
+.cashback-total{
+  background: $footer-bg url(#{$site-backgrounds-path}/cashback-total.png) no-repeat center top / cover ;
+  color: $white;
+  text-align: center;
+  padding: rem-calc(350) 0;
+
+  .cashback-total-title {
+    font-size: rem-calc(40);
+    font-weight: 400;
+    margin-bottom: rem-calc(50);
+  }
+
+  .cashback-total-counter {
+    font: 900 rem-calc(92) $gilroy-font-family;
+    width: 500px;
+    display: inline-block;
+    text-align: right;
+  }
+
+  @include breakpoint(small only) {
+    padding: rem-calc(180) $global-gutters;
+
+    .cashback-total-title {
+      font-size: rem-calc(24);
+      margin-bottom: rem-calc(24);
+    }
+
+    .cashback-total-counter {
+      width: rem-calc(255);
+      font-size: rem-calc(48);
+    }
+  }
+}
+
+
+.download-app {
+  background-color: $footer-bg;
+  padding: rem-calc(70) $global-gutters;
+  text-align: center;
+  border-bottom: 1px solid #252E39;
+
+  .download-app-title {
+    font-size: rem-calc(24);
+    padding-bottom: 1rem;
+    color: $white;
+  }
+
+  .download-app-text {
+    font-size: rem-calc(18);
+    max-width: rem-calc(470);
+    margin: 0 auto rem-calc(40);
+  }
+
+  .button-download {
+    display: inline-block;
+    margin: rem-calc(7 15);
+  }
+
+  @include breakpoint(small only) {
+    padding: rem-calc(40) $global-gutters;
+  }
+}

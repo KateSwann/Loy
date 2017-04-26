@@ -2,10 +2,26 @@
 
 
 @mixin custom-anchor-styles($custom-anchor-color) {
-	color: $custom-anchor-color;
+  color: $custom-anchor-color;
 
-	&:hover,
+  &:hover,
     &:focus {
-    	color: scale-color($custom-anchor-color, $lightness: -14%);
-	}
+      color: scale-color($custom-anchor-color, $lightness: -14%);
+  }
+}
+
+.section-title {
+  $section-title-font-size: rem-calc(32);
+  $section-title-margin-top: rem-calc(60);
+  $section-title-margin-bottom: rem-calc(75);
+
+  text-align: center;
+  margin: rem-calc($section-title-margin-top 0 $section-title-margin-bottom);
+  font-size: $section-title-font-size;
+  font-weight: 400;
+
+    @include breakpoint(small only) {
+      font-size: $section-title-font-size * 0.8;
+      margin: rem-calc(($section-title-margin-top * 0.7) rem-calc(20) ($section-title-margin-bottom * 0.7) );
+    }
 }

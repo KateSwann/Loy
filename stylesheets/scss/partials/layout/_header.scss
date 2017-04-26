@@ -2,7 +2,7 @@
 
 $header-font-size: rem-calc(18);
 $header-x-padding-mobile: rem-calc(25);
-$header-y-padding-mobile: rem-calc(30);
+$header-y-padding-mobile: rem-calc(20);
 
 
 .header {
@@ -114,24 +114,34 @@ $header-y-padding-mobile: rem-calc(30);
 
 
 @include breakpoint(small only) {
-    .toggle-header-nav {
-      position: fixed;
-      right: rem-calc(20px);
-      top: rem-calc(11px);
-      z-index: 6;
-    }
+  #header-nav {
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    padding: $header-y-padding-mobile $header-x-padding-mobile;
+    overflow: auto;
+  }
 
-    #header-nav {
-      background: rgba(0, 0, 0, 0.9);
+  .toggle-header-nav-wrapper {
       position: fixed;
-      top: 0;
-      bottom: 0;
-      left: 0;
+      height: rem-calc(68px);
+      width: rem-calc(70px);
       right: 0;
-      z-index: 5;
-      padding: $header-y-padding-mobile $header-x-padding-mobile;
-      overflow: auto;
-    }
+      z-index: 6;
+  }
+
+  .toggle-header-nav {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+  }
 }
 
 

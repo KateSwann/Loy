@@ -1,4 +1,4 @@
-//  Foundation for Sites Settings
+      //  Foundation for Sites Settings
 //  -----------------------------
 //
 //  Table of Contents:
@@ -53,7 +53,7 @@ $global-lineheight: 1.5;
 
 $foundation-palette: (
   primary: #405BFF,
-  secondary: #848D92,
+  secondary: #838F9B,
   success: #3adb76,
   warning: #ffae00,
   alert: #cc4b37,
@@ -81,7 +81,7 @@ $boulder-gray: #797979;
 $black: #0a0a0a;
 $white: #fefefe;
 $body-background: $white;
-$body-font-color: $black;
+$body-font-color: $secondary-color;
 
 $body-font-family: BloggerSans, 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 $gilroy-font-family: Gilroy, 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;

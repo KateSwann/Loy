@@ -1,0 +1,12 @@
+// --------------- Paths for images -------------
+
+$site-backgrounds-path: "../../images/backgrounds";
+
+// --------------- Global gutters -------------
+
+
+$global-gutters: 30px;
+
+@include breakpoint(small only) {
+  $global-gutters: 20px;
+}
