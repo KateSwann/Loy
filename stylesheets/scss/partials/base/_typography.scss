@@ -12,16 +12,17 @@
 
 .section-title {
   $section-title-font-size: rem-calc(32);
-  $section-title-margin-top: rem-calc(60);
-  $section-title-margin-bottom: rem-calc(75);
+  $section-title-padding-top: rem-calc(60);
+  $section-title-padding-bottom: rem-calc(65);
 
   text-align: center;
-  margin: rem-calc($section-title-margin-top 0 $section-title-margin-bottom);
+  padding: rem-calc($section-title-padding-top 0 $section-title-padding-bottom);
+  margin-bottom: 0;
   font-size: $section-title-font-size;
   font-weight: 400;
+  color: $black;
 
     @include breakpoint(small only) {
-      font-size: $section-title-font-size * 0.8;
-      margin: rem-calc(($section-title-margin-top * 0.7) rem-calc(20) ($section-title-margin-bottom * 0.7) );
+      padding: rem-calc(($section-title-padding-top * 0.7) rem-calc(20) ($section-title-padding-bottom * 0.7) );
     }
 }

@@ -1777,10 +1777,10 @@ kbd {
       background-color: #051cff;
       color: #fefefe; }
   .button.accent {
-    background-color: #FF61A1;
+    background-color: #DA2063;
     color: #0a0a0a; }
     .button.accent:hover, .button.accent:focus {
-      background-color: #ff1b77;
+      background-color: #ae1a4f;
       color: #0a0a0a; }
   .button.blank {
     background-color: #FFFFFF;
@@ -1833,11 +1833,11 @@ kbd {
         border-color: #000fa3;
         color: #000fa3; }
     .button.hollow.accent {
-      border: 1px solid #FF61A1;
-      color: #FF61A1; }
+      border: 1px solid #DA2063;
+      color: #DA2063; }
       .button.hollow.accent:hover, .button.hollow.accent:focus {
-        border-color: #b00047;
-        color: #b00047; }
+        border-color: #6d1032;
+        color: #6d1032; }
     .button.hollow.blank {
       border: 1px solid #FFFFFF;
       color: #FFFFFF; }
@@ -1890,7 +1890,7 @@ kbd {
       opacity: 0.25;
       cursor: not-allowed; }
       .button.disabled.accent, .button.disabled.accent:hover, .button.disabled.accent:focus, .button[disabled].accent, .button[disabled].accent:hover, .button[disabled].accent:focus {
-        background-color: #FF61A1;
+        background-color: #DA2063;
         color: #0a0a0a; }
     .button.disabled.blank, .button[disabled].blank {
       opacity: 0.25;
@@ -3960,13 +3960,14 @@ body {
 /* ---------------- Fonts and typography ----------------*/
 .section-title {
   text-align: center;
-  margin: 3.75rem 0 4.6875rem;
+  padding: 3.75rem 0 4.0625rem;
+  margin-bottom: 0;
   font-size: 2rem;
-  font-weight: 400; }
+  font-weight: 400;
+  color: #0a0a0a; }
   @media screen and (max-width: 45.5625em) {
     .section-title {
-      font-size: 1.6rem;
-      margin: 2.625rem 1.25rem 3.28125rem; } }
+      padding: 2.625rem 1.25rem 2.84375rem; } }
 
 /* ------------------ Labels ------------- */
 /* ------------------ Buttons ------------- */
@@ -4254,7 +4255,8 @@ body {
     float: left;
     padding-right: 0.625rem;
     padding-left: 0.625rem;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 2.5rem; }
     @media print, screen and (min-width: 45.625em) {
       .promo-items-list .promo-item {
         padding-right: 0.9375rem;
@@ -4479,8 +4481,13 @@ body {
   font-style: normal; }
 /* END Black */
 /* ---------------- Header ----------------*/
+.overlying-header-container {
+  position: fixed;
+  width: 100%;
+  z-index: 1001; }
+
 .header {
-  background-color: #352e45;
+  background-color: transparent;
   font-size: 1.125rem;
   color: #fefefe;
   width: 100%;
@@ -4612,6 +4619,30 @@ body {
   .user-nav {
     padding-top: 8px; } }
 /* ---------------- Sections ----------------*/
+.hero {
+  background: #1B2129 url(../../images/backgrounds/hero-background.png) no-repeat center top/cover;
+  color: #fefefe;
+  min-height: 80vh;
+  max-height: 990px;
+  text-align: center; }
+  .hero .hero-content {
+    display: inline-block;
+    padding-top: 45vh; }
+  .hero .hero-title {
+    font-size: 3rem;
+    font-weight: 400; }
+
+.partners {
+  background-color: #F9F9F9;
+  text-align: center; }
+  .partners > .button {
+    font-size: 1.125rem;
+    padding: 0.8125rem 2.625rem;
+    margin: 3.4375rem 0 4.0625rem; }
+    @media screen and (max-width: 45.5625em) {
+      .partners > .button {
+        margin: 1.875rem 0 2.5rem; } }
+
 .cashback-total {
   background: #1B2129 url(../../images/backgrounds/cashback-total.png) no-repeat center top/cover;
   color: #fefefe;

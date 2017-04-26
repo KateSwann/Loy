@@ -4,21 +4,26 @@ $header-font-size: rem-calc(18);
 $header-x-padding-mobile: rem-calc(25);
 $header-y-padding-mobile: rem-calc(20);
 
+.overlying-header-container {
+  position: fixed;
+  width: 100%;
+  z-index: 1001;
+}
 
 .header {
-    background-color: #352e45; //test value instead of transparent
-    font-size: $header-font-size;
-    color: $white;
-    width:100%;
-    transition: background 0.7s ease-in-out 0s;
-    animation-delay: 800ms;
-    animation-duration: 600ms;
-    transform: none; // rewrite .sticky styles
-    z-index: inherit;
+  background-color: transparent;
+  font-size: $header-font-size;
+  color: $white;
+  width:100%;
+  transition: background 0.7s ease-in-out 0s;
+  animation-delay: 800ms;
+  animation-duration: 600ms;
+  transform: none; // rewrite .sticky styles
+  z-index: inherit;
 
-    &.is-stuck {
-        background-color: $header-bg;
-    }
+  &.is-stuck {
+    background-color: $header-bg;
+  }    
 }
 
 .region-opener {
