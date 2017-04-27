@@ -48,7 +48,7 @@
 // ---------
 
 $global-font-size: 100%;
-$global-width: rem-calc(1200);
+$global-width: rem-calc(1300);
 $global-lineheight: 1.5;
 
 $foundation-palette: (
@@ -61,12 +61,12 @@ $foundation-palette: (
 
 $loy-button-palette: map-merge($foundation-palette, (
   primary-lighten: #4657FF, // lighten blue
-  accent: #DA2063, // bubble gum pink
+  accent: #DB3571, // bubble gum pink
   blank: #FFFFFF, // white
 )) !default;
 
 $primary-lighten-color: #4657FF; // lighten blue
-$accent-color: #FF61A1; // bubble gum pink
+$accent-color: #DB3571; // bubble gum pink
 $secondary-lighten-color: #748290; // light grey
 $neutral-color: #F2F2F2; // greyish biege
 
@@ -106,12 +106,12 @@ $print-transparent-backgrounds: true;
 $breakpoints: (
   small: 0,
   medium: 730px,
-  large: 1024px,
-  xlarge: 1200px,
-  xxlarge: 1440px,
+  large: 1280px,
+  xlarge: 1440px,
+  xxlarge: 1920px,
 );
 $print-breakpoint: large;
-$breakpoint-classes: (small medium large);
+$breakpoint-classes: (small medium large xlarge xxlarge);
 
 // 3. The Grid
 // -----------

@@ -1,13 +1,30 @@
 /* ---------------- Footer ----------------*/
 
+$footer-y-rhythm: rem-calc(30);
+
 .footer {
-	background-color: $footer-bg;
-	padding: rem-calc(60) 0;
+  background-color: $footer-bg;
+  padding: rem-calc($footer-y-rhythm*2 0);
 
-	a {color: $white;}
+  a {@include custom-anchor-styles($white);}
 
-	& [href^=tel] {
-		font-size: rem-calc(24);
-		font-weight: 500;
-	}
+  & [href^=tel] {
+    font-size: rem-calc(24);
+    font-weight: 500;
+  }
+
+  .site-nav-menu,
+  .subnav,
+  .social {
+    padding-bottom: $footer-y-rhythm;
+  }
+
+
+  @include breakpoint(small only) {
+    .site-nav-menu:before {
+      padding-top: $footer-y-rhythm;
+      display: block;
+      content: "";
+      }
+    }
 }

@@ -8,6 +8,9 @@ $site-nav-header-color: $white;
 $site-nav-header-active-color: $accent-color;
 $site-nav-footer-color: $primary-color;
 
+
+// Navigation menu for header & footer
+
 .site-nav-menu {
   @include menu-simple;
 
@@ -19,7 +22,7 @@ $site-nav-footer-color: $primary-color;
   // Site navigation menu for HEADER
 
   .header & {
-    li {
+     & li {
       border-bottom: 4px solid transparent;
       padding: $site-nav-header-font-padding;
       margin-right: $site-nav-header-font-margin;
@@ -36,6 +39,7 @@ $site-nav-footer-color: $primary-color;
   // Site navigation menu for FOOTER
 
   .footer & {
+    & li {line-height: 2.2}
     & a {@include custom-anchor-styles($site-nav-footer-color);}
   }
 
@@ -61,38 +65,16 @@ $site-nav-footer-color: $primary-color;
 }
 
 
-// Social icons menu list
-
-.social {
-  @include menu-simple;
-
-  font-size: 0;
-  text-align: justify;
-  margin: 0 auto rem-calc(30);
-  max-width: rem-calc(250);
-
-  &::after {
-    content: "";
-    display: inline-block;
-    width: 100%;
-  }
-
-  li {
-    display: inline-block;
-    padding: 0;
-    margin: 0;
-  }
-
-  @include breakpoint(medium only) {
-    @include grid-column; // returns the correct left&right indents
-  }
-}
+// Footer secondary menu list
 
 .subnav {
   @include menu-simple;
 
   margin-left: 0;
   font-weight: 500;
+
+
+  & li {line-height: 2.2}
 
   & li > a {
     color: $secondary-color;

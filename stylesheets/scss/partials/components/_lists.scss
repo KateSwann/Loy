@@ -1,5 +1,8 @@
 /* ------------------ Lists ------------- */
 
+
+// Main page companies block 
+
 .companies-list-simple {
   @include grid-layout(4, '.company-item-wrapper', $grid-column-gutter);
 
@@ -75,6 +78,8 @@
 }
 
 
+// Main page promo text and icons
+
 .promo-items-list {
   @include grid-row;
 
@@ -101,5 +106,32 @@
     font-weight: 300;
     font-size: rem-calc(18);
     margin: rem-calc(15 0)
+  }
+}
+
+
+// Social icons list
+
+.social {
+  font-size: 0;
+  text-align: justify;
+  margin: 0 auto rem-calc(30);
+  max-width: rem-calc(250);
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+  }
+
+  li {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+  }
+
+  @include breakpoint(medium only) {
+    @include grid-column; // returns the correct left&right li indents
+    margin-left: rem-calc(-20); // gets rid of unnecessary left list indent
   }
 }

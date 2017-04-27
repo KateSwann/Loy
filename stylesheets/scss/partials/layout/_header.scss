@@ -4,6 +4,9 @@ $header-font-size: rem-calc(18);
 $header-x-padding-mobile: rem-calc(25);
 $header-y-padding-mobile: rem-calc(20);
 
+$top-bar-stack-start: map-get($breakpoints, 'medium'); // manually adjustable value
+$top-bar-stack-stop: 955px; // manually adjustable value
+
 .overlying-header-container {
   position: fixed;
   width: 100%;
@@ -23,102 +26,109 @@ $header-y-padding-mobile: rem-calc(20);
 
   &.is-stuck {
     background-color: $header-bg;
-  }    
+  }
 }
 
 .region-opener {
-    @include custom-anchor-styles($white);
-    vertical-align: sub;
+  @include custom-anchor-styles($white);
+  vertical-align: sub;
 
 
-    @include breakpoint(small only) {
-        font-size: rem-calc(24);
-        font-weight: 500;
-    }
+  @include breakpoint(small only) {
+      font-size: rem-calc(24);
+      font-weight: 500;
+  }
 }
 
 .region-confirmation-button-group {
-    @include button-group($buttongroup-child-selector);
-    @include hide-for-only(small);
+  @include button-group($buttongroup-child-selector);
+  @include hide-for-only(small);
+  @include hide-for-only(medium);
 
-    display: inline-block;
+  display: inline-block;
+  margin: rem-calc(0 0 0 15);
 
-    & .button-group-title {
-      color: $secondary-color;
-      font-size: $header-font-size;
-      padding-right: rem-calc(20);
-      vertical-align: middle;
-    }
+  & .button-group-title {
+    color: $secondary-color;
+    font-size: $header-font-size;
+    padding-right: rem-calc(20);
+    vertical-align: middle;
+  }
 
-    & .button {
-      font-size: $header-font-size;
-      font-weight: 400;
-      padding: rem-calc(7) rem-calc(15);
-    }
-    & .button.blank {
-      color: $primary-color;
-    }
+  & .button {
+    font-size: $header-font-size;
+    font-weight: 400;
+    padding: rem-calc(7) rem-calc(15);
+  }
+  & .button.blank {
+    color: $primary-color;
+  }
 
-    & .button.transparent {
-      background-color: transparent;
-    }
+  & .button.transparent {
+    background-color: transparent;
+  }
 }
 
 .user-nav {
-    $user-avatar-size: rem-calc(40);
-    $user-avatar-size-mobile: rem-calc(56);
-    $user-avatar-side-padding: rem-calc(15);
+  $user-avatar-size: rem-calc(40);
+  $user-avatar-size-mobile: rem-calc(56);
+  $user-avatar-side-padding: rem-calc(15);
 
-    @include clearfix;
-    float: right;
+  @include clearfix;
+  float: right;
 
-    & .button.signin {
-        font-size: $header-font-size;
-        padding: rem-calc(11) rem-calc(24);
-    }
+  & .button.signin {
+      font-size: $header-font-size;
+      padding: rem-calc(11) rem-calc(24);
+  }
 
-    & .avatar {
-        border-radius: 50%;
-        background-color: #ccc; //test value
-        width: $user-avatar-size;
-        height: $user-avatar-size;
-        margin: 0 0 0 $user-avatar-side-padding;
-    }
+  & .avatar {
+      border-radius: 50%;
+      background-color: #ccc; //test value
+      width: $user-avatar-size;
+      height: $user-avatar-size;
+      margin: 0 0 0 $user-avatar-side-padding;
+  }
 
-    @include breakpoint(small only) {
-        float: none;
-        text-align: center;
+  @include breakpoint(small only) {
+      float: none;
+      text-align: center;
 
-        border-bottom: 2px solid $white;
-        margin: 40px auto;
-        padding-bottom: 40px;
+      border-bottom: 2px solid $white;
+      margin: 40px auto;
+      padding-bottom: 40px;
 
-        & .button.signin {
-            color: $accent-color;
-            border-color: $accent-color;
-        }
+      & .button.signin {
+          color: $accent-color;
+          border-color: $accent-color;
+      }
 
-        & .user-profile {
-            display: inline-block;
-            font-size: rem-calc(24);
-            line-height: $user-avatar-size-mobile;
-        }
+      & .user-profile {
+          display: inline-block;
+          font-size: rem-calc(24);
+          line-height: $user-avatar-size-mobile;
+      }
 
-        & .avatar {
-            float: left;
-            width: $user-avatar-size-mobile;
-            height: $user-avatar-size-mobile;
-            margin: 0 $user-avatar-side-padding 0 0;
-        }
-    }
+      & .avatar {
+          float: left;
+          width: $user-avatar-size-mobile;
+          height: $user-avatar-size-mobile;
+          margin: 0 $user-avatar-side-padding 0 0;
+      }
+  }
 
-    @include breakpoint(medium) {
-        & .user-profile {@include custom-anchor-styles($secondary-color); }
-    }
+  @include breakpoint(medium) {
+    & .user-profile {@include custom-anchor-styles($secondary-color); }
+  }
 }
 
 
 @include breakpoint(small only) {
+  .top-bar-title {
+    margin: rem-calc(8 45 20 0);
+    padding: 0;
+  }
+
   #header-nav {
     background: rgba(0, 0, 0, 0.9);
     position: fixed;
@@ -132,11 +142,11 @@ $header-y-padding-mobile: rem-calc(20);
   }
 
   .toggle-header-nav-wrapper {
-      position: fixed;
-      height: rem-calc(68px);
-      width: rem-calc(70px);
-      right: 0;
-      z-index: 6;
+    position: fixed;
+    height: rem-calc(68px);
+    width: rem-calc(70px);
+    right: 0;
+    z-index: 6;
   }
 
   .toggle-header-nav {
@@ -153,7 +163,21 @@ $header-y-padding-mobile: rem-calc(20);
 // Horizontal align of the header components for normal state
 
 @include breakpoint(medium) {
-    #header-nav {margin-top: 40px; }
-    .region-opener-group {padding-top: 10px; }
-    .user-nav {padding-top: 8px; }
+  .top-bar-title {
+    font-size: rem-calc(30);
+    margin: rem-calc(15 45 20 0);
+    padding: 0;
+  }
+
+  #header-nav {margin-top: rem-calc(25); }
+  .region-opener-group {padding-top: rem-calc(10); }
+  .user-nav {padding-top: rem-calc(8); }
+}
+
+
+// Stack header element into two lines between two values
+
+@media (min-width: $top-bar-stack-start) and (max-width: $top-bar-stack-stop) {
+  .header {@include top-bar-stacked;}
+  .header .top-bar-left {float: none;}
 }

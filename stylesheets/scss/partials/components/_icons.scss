@@ -24,5 +24,9 @@
 
 [class*='icon-'].before-text:before {
   vertical-align: -1px;
-  margin-right: 4px;
+  margin-right: 5px;
+}
+[class*='icon-'].before-text-centered:before {
+  vertical-align: middle;
+  margin-right: 5px;
 }
