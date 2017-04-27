@@ -4,7 +4,7 @@ $header-font-size: rem-calc(18);
 $header-x-padding-mobile: rem-calc(25);
 $header-y-padding-mobile: rem-calc(20);
 
-$top-bar-stack-start: map-get($breakpoints, 'medium'); // manually adjustable value
+$top-bar-stack-start: map-get($breakpoints, 'medium');
 $top-bar-stack-stop: 955px; // manually adjustable value
 
 .overlying-header-container {

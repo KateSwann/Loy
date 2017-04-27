@@ -4,7 +4,7 @@
 .hero {
   background: $footer-bg url(#{$site-backgrounds-path}/hero-background.png) no-repeat center top / cover ;
   color: $white;
-  max-height: 990px;
+  min-height: 100vh;
   text-align: center;
 
   .hero-content {
